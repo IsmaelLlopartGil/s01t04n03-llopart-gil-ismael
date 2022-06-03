@@ -7,6 +7,7 @@ class MyObjectTest {
 
 	String string="";
 	String string2=null;
+	String string3;
 
 	@Test
 	public void givenStringObject_whenIsEmpty_thenAssertionSucceeds() {
@@ -16,11 +17,13 @@ class MyObjectTest {
 	@Test
 	public void givenStringObject_whenIsNull_thenAssertionSucceeds() {
 		assertThat(string2).isNull();
+		assertThat(string3).isNull();
 	}
 	
 	@Test
 	public void givenStringObject_whenIsBlank_thenAssertionSucceeds() {
 		assertThat(string).isBlank();
 		assertThat(string2).isBlank();
+		assertThat(string3).isBlank();
 	}
 }
